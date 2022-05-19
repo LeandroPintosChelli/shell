@@ -1,2 +1,2 @@
 #!/bin/bash
-mkdir -v {to,school,school}
+mkdir . {to,school,school}
