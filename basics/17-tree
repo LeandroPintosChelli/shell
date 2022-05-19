@@ -1,2 +1,2 @@
 #!/bin/bash
-mkdir /basics {to,school,school}
+mkdir newdir {to,school,school}
