@@ -1,2 +1,2 @@
 #!/bin/bash
-chown
+chown --from=hello root betty
