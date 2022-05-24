@@ -1,3 +1,4 @@
+#!/bin/bash
 git add .
-git commit -m "redirections"
-git pull
+git commit -m "permissions"
+git push
