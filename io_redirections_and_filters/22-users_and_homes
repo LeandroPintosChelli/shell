@@ -1,2 +1,2 @@
 #!/bin/bash
-grep -E '^[^:/]+' /etc/passwd
+cut -d: -f6,7 /etc/passwd
