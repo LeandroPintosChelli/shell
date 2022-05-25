@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -empty -printf "xHH"
+find . -empty -printf "bfn"
