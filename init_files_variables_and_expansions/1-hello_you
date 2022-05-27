@@ -1,2 +1,2 @@
 #!/bin/bash
-echo hello $HOME
+echo Hello $var_a
