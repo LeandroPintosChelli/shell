@@ -4,7 +4,6 @@ for file in *;
 do
 	if [ "$file" = school ]
 	then 
-	let found=1
 		echo "school file exists"
 	if [ -s "$file" ]
 then 
