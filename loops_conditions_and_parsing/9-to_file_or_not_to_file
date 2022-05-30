@@ -6,17 +6,18 @@ do
 	if [ "$file" = school ]
 	then 
 		echo "school file exist"
-	if [ -s "$file" ]
+	if [ -s "school" ]
 then 
 	echo "school file is empty"
 else 
 	echo "school file is not empty"
 		fi
-if [ -f "$file" ]
+if [ -f "school" ]
 then
 	echo "school is a regular file" 
-fi
+fi 
 	fi
+
 done
 if [ $x -eq 0 ] 
 then
