@@ -3,18 +3,18 @@
 n=1
 while [ $n -lt 101 ]
 do
-	case $n in  "$((n % 5)) == 0 ")
+	case $n in "$((n % 5)) == 0 ")
 	      echo "FizzBuzz"
 
-	      case $n in " $((n % 3 )) == 0 ") 
+	       " $((n % 3 )) == 0 " 
 	
 		echo "FizzBuzz"
 
-		case in $n " $((n % 3 )) == 0 ")
+		 " $((n % 3 )) == 0 "
 
-		echo "Fizz"
-	case " $((n % 5 )) == 0 "
-	echo "buzz"
+		echo "Fizz";;
+		 " $((n % 5 )) == 0 ")
+	echo "buzz";;
 	
 esac
 	n=$(( n + 1))
