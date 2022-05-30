@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #
-while IFS=':' read -ra line
+while IFS=":" read -ra line
 do
-       echo "User ${line[0]}	
+       echo "${line[0]} ${line[3]} ${line[5]}"	
 done < /etc/passwd
