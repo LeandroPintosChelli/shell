@@ -2,9 +2,9 @@
 #
 for file in *
 do
-	if [ "$file" == school ]
+	if [ "$file" = school ]
 	then 
-		echo "school file exist"
+		echo "school file exists"
 	if [ -s "$file" ]
 then 
 	echo "school file is empty"
