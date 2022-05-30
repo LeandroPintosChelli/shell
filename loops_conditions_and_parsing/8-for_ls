@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 #
+ls | cut -d "-" -f2
 for x in 
 do
-	echo "$x" | cut -d "-" -f2 
+	echo "$x" | cut -d "-" 
 done
