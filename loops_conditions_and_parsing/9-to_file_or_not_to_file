@@ -17,7 +17,6 @@ then
 fi 
 	fi
 
-done
 if [ "$file" ] 
 then
 	echo "school file does not exist"
