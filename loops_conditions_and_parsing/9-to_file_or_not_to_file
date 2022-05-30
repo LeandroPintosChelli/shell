@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #
-for file in * 
-do 
+for file in *
+do
 	if [ "$file" = school ]
 	then 
 		echo "school file exist"
