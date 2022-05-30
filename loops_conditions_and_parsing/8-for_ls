@@ -3,5 +3,5 @@
 #ls | cut -d "-" -f2
 for x in 
 do
-	echo "$x" | cut -d "-" 
+	echo "$x" | cut -d "-" -f2
 done
