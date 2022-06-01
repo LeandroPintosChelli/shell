@@ -1,15 +1,13 @@
 #!/usr/bin/env bash
 #
-
-while ((1)); do
-	    echo "To infinity and beyond"
-	        sleep 2
-	done
-
-trap 'echo I hate the kill command; sudo rm $file; exit' SIGTERM
-trap 'echo Y U no love me?!' SIGINT
-trap 'sudo rm $file; exit' SIGQUIT
-while ((1)); do
-    echo "To infinity and beyond"
-    sleep 2
+x=1
+while [ $x -gt 0 ]
+do
+	echo "To infinity and beyond"
+	sleep 2
 done
+
+trap 'echo I hate the kill command; sudo rm $x; exit' SIGTERM
+trap 'echo Y U no love me?!' SIGINT
+trap 'sudo rm $x; exit' SIGQUIT
+
