@@ -4,7 +4,7 @@ file=/var/run/myscript.pid
 echo $$ >> $file
 trap 'echo I hate the kill command; sudo rm $file; exit' 15
 trap 'echo Y U no love me?!' 2
-trap 'sudo rm $file; exit' 3
+trap 'rm -f $file; exit' 3
 while ((1)); do
 	    echo "To infinity and beyond"
 	        sleep 2
