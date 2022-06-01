@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-pkill -f -9 "7-highlander"
+pkill -f -15 "7-highlander"

@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 #
-x=1
+x=/var/run/holbertonscript.pid
+echo $$ >> $x
 while [ $x -gt 0 ]
 do
 	echo "To infinity and beyond"
