@@ -1,13 +1,13 @@
 #!/usr/bin/env bash
 #
-x="myscript.pid"
+x=/var/run/myscript.pid
 echo $$ >> $x
-
-trap 'echo I hate the kill command; sudo rm $x; exit' 15
-trap 'echo Y U no love me?!' 2
-trap 'sudo rm $x; exit' 3
 while [ $x -gt 0 ]
 do
-	        echo "To infinity and beyond"
-		        sleep 2
-		done
+       echo "To infinity and beyond"
+       sleep 2
+done
+trap -l 'echo I hate the kill command; sudo rm $x; exit' -15
+trap -l 'echo Y U no love me?!' -2
+trap -l 'sudo rm $x; exit' -3
+
