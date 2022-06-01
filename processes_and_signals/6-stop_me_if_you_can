@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 #
 x=4-to_infinity_and_beyond
-pkill -f -15 $x
+pkill -f -9 $x
