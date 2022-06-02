@@ -14,13 +14,15 @@ then
 	sudo rm $File
 	echo "manage_my_process stopped"
 
- elif [ "$1" == "restart" ];
-then
-	   pkill -f ./manage_my_process
-	   sudo rm $File
-	   ./manage_my_process &
-	   echo $$ > $File
-	   echo "manage_my_process restarted"
+ elif [ "$1" == "restart" ]; 
+ then
+	 
+	pkill -f ./manage_my_process
+	sudo rm $File
+	./manage_my_process &
+ 	echo $$ > $File
+	echo "manage_my_process restarted"
+
  else
 	   echo "Usage: manage_my_process {start|stop|restart}"
 
