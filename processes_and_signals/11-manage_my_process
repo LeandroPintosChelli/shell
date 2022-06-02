@@ -1,13 +1,24 @@
 #!/usr/bin/env bash
 #
 file=/var/run/my_process.pid
-if [ "$1" == "start" ]; then
-    ./manage_my_process &
-    echo $$ > $file
+man=./manage_my_process
+if [ "$1" = "start" ];
+then  $man & echo $$ > $file
     echo "manage_my_process started"
 
-elif [ "$1" == "stop" ]; then
-	 pkill -f ./manage_my_process
+elif [ "$1" = "stop" ];
+then
+	 pkill -f $man
 	 sudo rm $file
 	 echo "manage_my_process stopped"
-fi
+
+ elif [ "$1" = "restart" ];
+then
+	   pkill -f $man
+	   sudo rm $file $man &
+	   echo $$ > $file
+	   echo "manage_my_process restarte"
+ else
+	   echo "Usage: manage_my_process {start|stop|restart}"
+
+fi	   
