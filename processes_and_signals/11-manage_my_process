@@ -6,8 +6,8 @@ if [ "$1" == "start" ];
 then
       	$man &
  echo $$ > $File
- echo "manage_my_process started"
- echo "I am alive!"
+ echo "manage_my_process started
+ I am alive!"
 elif [ "$1" == "stop" ];
 then
 	 pkill -f $man
