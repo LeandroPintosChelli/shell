@@ -8,10 +8,10 @@ then
  echo $$ > $File
  echo "manage_my_process started"
  
-elif [ "$1" == "stop" ];
+elif [ "$1" == "stop" ]; 
 then
-	kill ./manage_my_process
-	sudo rm $File
+	pkill -f ./manage_my_process
+	sudo rm /var/run/my_process.pid
 	echo "manage_my_process stopped"
 
  elif [ "$1" == "restart" ];
