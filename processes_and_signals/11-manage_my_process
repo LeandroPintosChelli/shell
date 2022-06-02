@@ -12,7 +12,7 @@ elif [ "$1" == "stop" ];
 then
 	 pkill -f ./manage_my_process 
 	echo $$ >> $File
-       trap 'sudo rm $File'	
+       trap 'sudo rm $File; stop'	
 	echo "manage_my_process stopped"
 
  elif [ "$1" == "restart" ];
