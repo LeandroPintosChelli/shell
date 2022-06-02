@@ -10,9 +10,7 @@ then
  
 elif [ "$1" == "stop" ];
 then
-	 pkill -f ./manage_my_process 
-	rm -rf $File
-  	
+	pkill -f -15 ./manage_my_process
 	echo "manage_my_process stopped"
 
  elif [ "$1" == "restart" ];
