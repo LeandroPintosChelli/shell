@@ -4,7 +4,7 @@ file=/var/run/my_process.pid
 
 if [ "$1" == "start" ];
 then 
-       ./manage_my_process & echo $$ > $file
+       ./manage_my_process && echo $$ > $file
     echo "manage_my_process started"
 
 elif [ "$1" == "stop" ];
@@ -16,7 +16,7 @@ then
  elif [ "$1" == "restart" ];
 then
 	   pkill -f ./manage_my_process
-	   rm $file ./manage_my_process &
+	   rm $file ./manage_my_process &&
 	   echo $$ > $file
 	   echo "manage_my_process restarted"
  else
