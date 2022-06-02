@@ -10,15 +10,15 @@ then
  
 elif [ "$1" == "stop" ]; 
 then
-	pkill "$( cat "$File" )" 
-	sudo rm $File
+	kill "$( cat "$File" )" 
+	rm -r $File
 	echo "manage_my_process stopped"
 
  elif [ "$1" == "restart" ]; 
  then
 	 
-	 pkill "$( cat "$File" )"
-	sudo rm $File
+	kill "$( cat "$File" )"
+	rm -r $File
 	./manage_my_process &
  	echo $$ > $File
 	echo "manage_my_process restarted"
